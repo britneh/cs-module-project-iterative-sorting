@@ -20,11 +20,17 @@ print(selection_sort([7,8,9,1,6,3,7,3,5]))
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
-    # Your code here
-
-
+    index_len = len(arr) -1
+    sorted = False
+    while not sorted:
+        sorted = True
+        for i in range( 0, index_len):
+            if arr[i] > arr[i+1]:
+                sorted = False 
+                arr[i], arr[i+1] = arr[i+1], arr[i]
     return arr
-
+    
+print(selection_sort([7,8,9,1,6,3,7,3,5]))
 '''
 STRETCH: implement the Counting Sort function below
 
